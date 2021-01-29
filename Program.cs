@@ -64,12 +64,10 @@ namespace NachoSolver
         {
             if (destinationDictionary.ContainsKey(character))
             {
-                //SI. Si el valor actual (en el diccionario) es MENOR, reemplazar, caso contrario, no hacer nada
                 destinationDictionary[character] = destinationDictionary[character] < count ? count : destinationDictionary[character];
             }
             else
             {
-                //NO. Agregarla con las ocurrencias
                 destinationDictionary.Add(character, count);
             }
         }
